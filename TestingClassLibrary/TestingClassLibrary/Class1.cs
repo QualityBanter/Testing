@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestingClassLibrary
 {
-    public class Class1
+    public class PremiumCalculator
     {
         public float CalcPremium(int age, string gender)
         {
@@ -45,7 +45,7 @@ namespace TestingClassLibrary
 
             if (age >= 50)
             {
-                //premium = premium * 0.15f;
+                premium = premium * 0.15f;
             }
 
             return premium;
