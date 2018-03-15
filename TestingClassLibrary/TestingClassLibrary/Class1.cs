@@ -3,9 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using fit;
 
 namespace TestingClassLibrary
 {
+    public class PremiumCalculatorTest : fit.ColumnFixture
+    {
+        public int age;
+        public string gender;
+
+        public PremiumCalculator calc = new PremiumCalculator();
+
+        public float Premium()
+        {
+            return calc.CalcPremium(age, gender);
+        }
+    }
+
+
     public class PremiumCalculator
     {
         public float CalcPremium(int age, string gender)
